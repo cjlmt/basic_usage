@@ -40,7 +40,7 @@
 - ### 参与开发开源项目
   * fork要开发的开源项目
   * 点击code，复制仓库的https链接
-  * 本地文件夹中输入：git clone https://github.com/cjlmt/example.git .  (注意尾部添加空格+英文句号)把服务器上的仓库克隆到本地
+  * 本地文件夹终端中输入：git clone https://github.com/cjlmt/example.git .  (注意尾部添加空格+英文句号)把服务器上的仓库克隆到本地
   * 此时本地仓库的推送是基于自己GitHub仓库的地址(git remote -v 查看)
   * 设置上游仓库链接(代码库)：git remote add upstream https://github.com/github_official/example.git
   * 要给别人加功能，先创建一个分支：git checkout -b xxx(创建并切换)
