@@ -1,0 +1,5 @@
+- you can upload your code file into your repository
+- you can mofify your code online and browse all the files
+- you can disscuss with others under 'issues'
+- you can 'fork' others'repository as your own repository
+- you can give them a star if you like their repository
