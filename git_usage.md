@@ -37,5 +37,19 @@
   * git remote add origin https://github.com/cjlmt/example.git ：添加一个远程仓库地址，给项目设置一个网盘地址，知道上传到哪里
   * git push -u origin main：推送上传到github仓库，随后会提示输入GitHub的邮箱和密码（可能因为网络原因要多推送几次）
   * 设置好后，GitHub仓库就有了你commit到git中的文件
+- ### 参与开发开源项目
+  * fork要开发的开源项目
+  * 点击code，复制仓库的https链接
+  * 本地文件夹中输入：git clone https://github.com/cjlmt/example.git .  (注意尾部添加空格+英文句号)把服务器上的仓库克隆到本地
+  * 此时本地仓库的推送是基于自己GitHub仓库的地址(git remote -v 查看)
+  * 设置上游仓库链接(代码库)：git remote add upstream https://github.com/github_official/example.git
+  * 要给别人加功能，先创建一个分支：git checkout -b xxx(创建并切换)
+  * 创建members文件夹，创建cjlmt.json文件，里面写一个对象包含你的信息，随后add并commit，最后push(第一次push必须要后面的参数指明push源和分支)
+    - git push -u origin xxx() 然后我们的仓库已经有xxx这个分支了
+  * 此时去作者的仓库下点击pull requests拉取请求(pr)，点击新建pr，选择我们仓库的xxx分支与base根源仓库的main分支进行比较
+    - 如果显示'able to merge'可以合并，则填写pr信息，创建pr
+    - 作者操作合并进主项目
+    - 如果显示不可合并，则你写代码的时候，作者已经进行了代码的更改，导致你俩的版本不一致
+      * 解决办法：更新本地版本：git fetch upstream，从上游更新最新代码。执行：git merge upstream/main，把远程的最新代码合并到自己的分支中，再git push
 
 其余很多的git功能实际工作中再查
