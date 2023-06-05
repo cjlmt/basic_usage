@@ -32,10 +32,10 @@
   * git checkout xxx(分支名)：切换分支，如果切换为主分支则分支名写master
   * 在不同分支上写代码，可以使用git merge命令将各个分支合并
 - ### GitHub提供公共git仓库服务，支撑团队协作
-  * 新建一个项目(云端以及本地)，本地项目先init - 添加readme.md - add - commit
+  * 新建一个项目(云端以及本地)，本地项目先init - 添加readme.md - add - commit（git并不要求本地仓库名和远程仓库名相同）
   * git branch -M main：创建一个main分支，并把主分支切换为main
   * git remote add origin https://github.com/cjlmt/example.git ：添加一个远程仓库地址，给项目设置一个网盘地址，知道上传到哪里
-  * git push -u origin main：推送上传到github仓库，随后可能提示输入GitHub的邮箱和密码
+  * git push -u origin main：推送上传到github仓库，随后会提示输入GitHub的邮箱和密码（可能因为网络原因要多推送几次）
   * 设置好后，GitHub仓库就有了你commit到git中的文件
 
 其余很多的git功能实际工作中再查
